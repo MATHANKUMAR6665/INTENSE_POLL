@@ -1,5 +1,9 @@
 # SyncPoll
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mrkugan54/SYNCPOLL/main/banner.png" alt="SyncPoll banner" width="100%" />
+</p>
+
 SyncPoll is a real-time audience polling platform for live events, meetings, classrooms, and interactive sessions. It allows organizers to create polls, share a join code or QR link, and collect live responses from participants in seconds.
 
 The project is split into a Go backend and a React frontend, with Redis for real-time updates and MongoDB for persistent data storage.
