@@ -116,7 +116,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Creator & Academic Card (MR KUGAN - MCA SRM KATTANKULATHUR) */}
+          {/* Column 2: Creator & Academic Card (MATHANKUMAR - MCA MASTER OF COMPUTER APPLICATIONS GEN AI) */}
           <div
             style={{
               background: 'var(--bg-secondary)',
@@ -179,7 +179,7 @@ export function Footer() {
                 marginBottom: '8px',
               }}
             >
-              MR. KUGAN
+              MR. MATHANKUMAR
             </h3>
 
             {/* Degree & Department */}
@@ -195,7 +195,7 @@ export function Footer() {
               }}
             >
               <GraduationCap size={17} color="var(--primary)" />
-              <span>MCA — Master of Computer Applications</span>
+              <span>MCA MASTER OF COMPUTER APPLICATIONS GEN AI</span>
             </div>
 
             {/* College & Campus */}
@@ -247,7 +247,7 @@ export function Footer() {
             <span>© {new Date().getFullYear()} <strong>SyncPoll</strong>.</span>
             <span>Crafted with</span>
             <Heart size={14} color="#ef4444" fill="#ef4444" style={{ display: 'inline' }} />
-            <span>by <strong>Mr. Kugan</strong> (MCA, SRM Kattankulathur).</span>
+            <span>by <strong>MR. MATHANKUMAR</strong> (MCA MASTER OF COMPUTER APPLICATIONS GEN AI, SRM Kattankulathur).</span>
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>

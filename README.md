@@ -24,8 +24,8 @@
 ---
 
 > ### 🎓 Project Architect & Academic Attribution
-> - **Lead Architect & Developer**: **MR. KUGAN**
-> - **Academic Degree**: **Master of Computer Applications (MCA)**
+> - **Lead Architect & Developer**: **MATHANKUMAR**
+> - **Academic Degree**: **MCA MASTER OF COMPUTER APPLICATIONS GEN AI**
 > - **Institution**: **SRM Institute of Science and Technology**, Kattankulathur, Chennai, Tamil Nadu, India
 > - **Project Repository**: [https://github.com/mrkugan54/SYNCPOLL](https://github.com/mrkugan54/SYNCPOLL)
 
@@ -269,8 +269,8 @@ The backend uses the following environment variables (defined in `backend/.env.e
 
 <div align="center">
 
-### **MR. KUGAN**
-**Master of Computer Applications (MCA)**  
+### **MR. MATHANKUMAR**
+**MCA MASTER OF COMPUTER APPLICATIONS GEN AI**  
 **SRM Institute of Science and Technology**, Kattankulathur, Chennai, India
 
 [![GitHub](https://img.shields.io/badge/GitHub-mrkugan54-181717?style=flat&logo=github)](https://github.com/mrkugan54)
