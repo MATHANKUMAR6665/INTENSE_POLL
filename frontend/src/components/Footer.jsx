@@ -143,7 +143,7 @@ export function Footer() {
                 <Sparkles size={13} /> Project Architect & Developer
               </span>
               <a
-                href="https://github.com/mrkugan54/SYNCPOLL"
+                href="https://github.com/MATHANKUMAR6665/INTENSE_POLL"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -274,7 +274,7 @@ export function Footer() {
               Create Poll
             </Link>
             <a
-              href="https://github.com/mrkugan54/SYNCPOLL"
+              href="https://github.com/MATHANKUMAR6665/INTENSE_POLL"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -287,7 +287,7 @@ export function Footer() {
                 gap: '4px',
               }}
             >
-              <span>mrkugan54/SYNCPOLL</span>
+              <span>MATHANKUMAR6665/INTENSE_POLL</span>
               <ExternalLink size={12} />
             </a>
           </div>

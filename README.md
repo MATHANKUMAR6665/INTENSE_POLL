@@ -17,7 +17,7 @@
   <b>Ultra-low-latency, zero-refresh audience decision platform engineered for live conferences, hybrid auditoriums, and interactive university keynote lectures.</b>
 </p>
 
-[Explore Live Demo](https://occupation-questionnaire-transcript-factor.trycloudflare.com) • [Report Issue](https://github.com/mrkugan54/SYNCPOLL/issues) • [GitHub Repository](https://github.com/mrkugan54/SYNCPOLL)
+[Explore Live Demo](https://occupation-questionnaire-transcript-factor.trycloudflare.com) • [Report Issue](https://github.com/MATHANKUMAR6665/INTENSE_POLL/issues) • [GitHub Repository](https://github.com/MATHANKUMAR6665/INTENSE_POLL)
 
 </div>
 
@@ -27,7 +27,7 @@
 > - **Lead Architect & Developer**: **MATHANKUMAR**
 > - **Academic Degree**: **MCA MASTER OF COMPUTER APPLICATIONS GEN AI**
 > - **Institution**: **SRM Institute of Science and Technology**, Kattankulathur, Chennai, Tamil Nadu, India
-> - **Project Repository**: [https://github.com/mrkugan54/SYNCPOLL](https://github.com/mrkugan54/SYNCPOLL)
+> - **Project Repository**: [https://github.com/MATHANKUMAR6665/INTENSE_POLL](https://github.com/MATHANKUMAR6665/INTENSE_POLL)
 
 ---
 
@@ -191,8 +191,8 @@ SyncPoll eliminates ballot stuffing without requiring audience members to comple
 ### Option 1: Docker Compose (Fastest)
 Clone the repository and spin up all services with one command:
 ```bash
-git clone https://github.com/mrkugan54/SYNCPOLL.git
-cd SYNCPOLL
+git clone https://github.com/MATHANKUMAR6665/INTENSE_POLL.git
+cd INTENSE_POLL
 docker compose up --build
 ```
 - **Web App**: `http://localhost:3000`
@@ -273,8 +273,8 @@ The backend uses the following environment variables (defined in `backend/.env.e
 **MCA MASTER OF COMPUTER APPLICATIONS GEN AI**  
 **SRM Institute of Science and Technology**, Kattankulathur, Chennai, India
 
-[![GitHub](https://img.shields.io/badge/GitHub-mrkugan54-181717?style=flat&logo=github)](https://github.com/mrkugan54)
-[![Project Repo](https://img.shields.io/badge/Repository-SYNCPOLL-00A6F4?style=flat&logo=git)](https://github.com/mrkugan54/SYNCPOLL)
+[![GitHub](https://img.shields.io/badge/GitHub-MATHANKUMAR6665-181717?style=flat&logo=github)](https://github.com/MATHANKUMAR6665)
+[![Project Repo](https://img.shields.io/badge/Repository-INTENSE_POLL-00A6F4?style=flat&logo=git)](https://github.com/MATHANKUMAR6665/INTENSE_POLL)
 
 *Crafted with passion for real-time systems, distributed state synchronization, and high-concurrency human-computer consensus interfaces.*
 
