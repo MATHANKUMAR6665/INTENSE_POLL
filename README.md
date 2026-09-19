@@ -9,62 +9,62 @@
 </p>
 
 <p align="center">
-  <strong>Real-time audience polling, live voting, and spatial decision-making for events, classrooms, and presentations.</strong>
+  <strong>Real-time polling for live events, classrooms, and high-energy presentations.</strong>
 </p>
 
-SyncPoll is a full-stack real-time polling platform that turns live audiences into interactive participants. Presenters can launch polls instantly, while attendees vote in real time from their devices. Results update instantly across the screen, with support for multiple poll formats, anti-duplicate protections, and a fast backend designed for high-concurrency traffic.
+SyncPoll is a modern audience engagement platform engineered for instant interaction at scale. Presenters can launch live polls in seconds, while attendees vote from their phones and watch results update in real time. Built for fast feedback loops, live decision-making, and highly interactive sessions, SyncPoll blends real-time infrastructure with a polished experience.
 
-## Why SyncPoll?
+## Built for live momentum
 
-- Live, real-time voting with instant updates
-- Multiple engagement formats: choice polls, tug-of-war, emoji reactions
-- Fast, scalable backend built in Go
-- Redis-powered atomic vote counting and pub/sub broadcasts
-- Secure creator auth and anti-fraud vote validation
-- Frontend built with React for responsive, modern UX
+- Instant audience feedback
+- Live polling with real-time result updates
+- Multi-format engagement experiences
+- High-concurrency vote handling
+- Anti-duplicate protection and secure backend validation
+- Clean presenter + audience experiences in one platform
 
-## Core features
+## Product highlights
 
-### Polling modes
+### Live polling modes
 
-- Choice polls with live winner tracking
+- Choice polls with live result bars
 - Multi-select voting
-- Tug-of-war clash mode
-- Real-time emoji reactions
-- Live result bars and animated updates
+- Tug-of-war style comparison polling
+- Emoji reaction streams
+- Real-time audience energy and sentiment tracking
 
-### Performance and reliability
+### Engineering advantages
 
-- Atomic vote counting with Redis `HINCRBY`
-- Deduplication using Redis sets
-- WebSocket broadcasting for live state sync
-- MongoDB persistence for polls, accounts, and audit logs
-- Graceful in-memory fallback for local testing
+- Redis-powered atomic vote counting
+- Pub/Sub event broadcasting across clients
+- WebSocket-driven live synchronization
+- MongoDB persistence for accounts, polls, and audit records
+- Graceful fallback mode for local testing and demos
 
-### Security
+### Security and trust
 
 - JWT-based creator authentication
-- Server-side validation before data writes
-- Duplicate-vote prevention via hashed device fingerprinting
-- Protected input sanitization and option checking
+- Server-side validation before writes
+- duplicate-vote rejection using hashed device fingerprints
+- protected input sanitization and option validation
 
-## Architecture overview
+## System architecture
 
 ```mermaid
 flowchart TB
     subgraph Clients[Clients]
-        Presenter[Presenter UI]
+        Presenter[Presenter Interface]
         Audience[Audience Voters]
     end
 
     subgraph Backend[Go Backend]
         API[GIN API]
         WS[WebSocket Hub]
-        Validator[Validation & Anti-Dedupe]
-        Syncer[Async Mongo Sync]
+        Validator[Validation & Anti-Dedupe Layer]
+        Syncer[Async Mongo Sync Worker]
     end
 
-    subgraph Realtime[Realtime Layer]
+    subgraph Realtime[Realtime Engine]
         RedisPub[Redis Pub/Sub]
         RedisHash[Redis Counters]
         RedisSet[Redis Voter Set]
@@ -91,30 +91,28 @@ flowchart TB
 
 | Layer | Technology | Purpose |
 | --- | --- | --- |
-| Backend | Go + Gin | API, auth, websocket hub, concurrency handling |
-| Cache / Realtime | Redis | Atomic counters, dedupe checks, event fan-out |
-| Database | MongoDB | Poll metadata, user accounts, audit logs |
-| Frontend | React + Vite | Interactive UI and live presentation screens |
-| Dev Ops | Docker Compose | Fast local environment startup |
+| Backend | Go + Gin | API layer, auth, websocket hub, concurrency management |
+| Realtime | Redis | atomic vote counting, deduplication, pub/sub fan-out |
+| Database | MongoDB | users, poll state, audit logs |
+| Frontend | React + Vite | interactive presenter and audience interfaces |
+| Local environment | Docker Compose | rapid bootstrapping for development and demos |
 
 ## Quick start
 
 ### Option 1: Docker Compose
 
-Make sure Docker is running, then:
-
 ```bash
 docker-compose up --build
 ```
 
-After startup:
+Open the app in your browser:
 
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:8080
 - MongoDB: localhost:27017
 - Redis: localhost:6379
 
-### Option 2: Manual local setup
+### Option 2: Manual setup
 
 #### Backend
 
@@ -137,7 +135,7 @@ Open:
 - Frontend: http://localhost:5173
 - Backend: http://localhost:8080
 
-## Project structure
+## Repository structure
 
 ```text
 .
@@ -156,19 +154,20 @@ Open:
 ├── run-frontend.bat
 ├── run-tunnel.bat
 ├── README.md
-└── .gitignore
+├── .gitignore
+└── LICENSE
 ```
 
-## Deployment
+## Deployment-ready setup
 
-### Cloud-ready setup
+SyncPoll is designed to be easy to deploy across a modern cloud stack:
 
 - MongoDB Atlas for durable storage
-- Upstash Redis for managed pub/sub and counters
-- Render, Railway, or Fly.io for the Go API
+- Upstash Redis for the realtime layer
+- Render, Railway, or Fly.io for the Go backend
 - Vercel or Netlify for the frontend
 
-Example backend environment variables:
+Example environment variables:
 
 ```bash
 MONGO_URI=your_mongodb_uri
@@ -177,22 +176,22 @@ JWT_SECRET=your_secure_secret
 PORT=8080
 ```
 
-Frontend environment values:
+Frontend config:
 
 ```bash
 VITE_API_URL=https://your-backend-url/api
 VITE_WS_URL=wss://your-backend-url
 ```
 
-## API overview
+## API surface
 
-### Auth
+### Authentication
 
 - `POST /api/auth/register`
 - `POST /api/auth/login`
 - `GET /api/auth/me`
 
-### Polls
+### Poll management
 
 - `POST /api/polls`
 - `GET /api/polls`
@@ -200,7 +199,7 @@ VITE_WS_URL=wss://your-backend-url
 - `PATCH /api/polls/:id/status`
 - `DELETE /api/polls/:id`
 
-### Voting
+### Interaction endpoints
 
 - `POST /api/polls/:id/vote`
 - `POST /api/polls/:id/react`
@@ -208,16 +207,16 @@ VITE_WS_URL=wss://your-backend-url
 
 ## Why this project stands out
 
-SyncPoll was designed to solve a real engineering challenge: handling live audience traffic without sacrificing correctness or speed. Instead of writing every vote directly to a database, it uses Redis for atomic increments, deduplication, and instant fan-out. This keeps the experience responsive even when many users vote at once.
+SyncPoll addresses a real problem in live audience experiences: handling a burst of simultaneous voting without sacrificing speed, correctness, or trust. Instead of writing directly to the database on every vote, it uses Redis for atomic counting, deduplication, and broadcast propagation. That gives presenters a responsive, polished experience even during high-pressure events.
 
 ## Contributing
 
-Contributions are welcome. If you want to improve the poll engine, add new voting modes, optimize the UI, or harden security, feel free to open a pull request.
+We welcome contributions that improve the platform, expand poll types, refine the UX, or strengthen performance and security.
 
 ## License
 
-This project is currently intended for personal or educational use as part of a live demo / portfolio project. Please check the repository for the applicable licensing terms if you plan to reuse the code.
+This project is intended for personal, educational, or portfolio use unless a repository license states otherwise.
 
 <p align="center">
-  <sub>Built for live events, classrooms, and interactive presentations.</sub>
+  <sub>Built for live events, classrooms, and real-time decision making.</sub>
 </p>
